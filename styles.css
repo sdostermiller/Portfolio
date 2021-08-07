@@ -1,0 +1,403 @@
+body {
+ background-color: #586349; 
+ font-family: Tahoma, Calibri, Helvetica, Arial, Verdana, sans-serif;
+ color: #ffffff; 
+}
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+   a:visited {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  a:hover {
+    font-weight: bold;
+    color: #172601;
+    text-shadow: 8px 8px 6px #D6F0B1;
+  }
+  
+   a:active {
+    color:#91A378;
+    text-decoration: none;
+    text-shadow: 8px 8px 6px #D6F0B1;
+  }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+
+
+#content-wrap {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+}
+
+#page-header {
+    padding: 15px;
+    background-color: #586349;
+    color: #ffffff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+#intro {
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #586349;
+    align-items: center;
+    
+}
+
+.centerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justifyright {
+    text-align: right;
+    padding-right: 20px;
+}
+
+#headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#biography {
+    height: 100vh;
+    width: 100%;
+    background-color: #7B8A66;
+    padding-top: 3rem;
+}
+
+#bioContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.bioContents {
+    margin: 10px;
+    text-align: justify;
+    width: 25%;
+    padding: 15px;
+}
+
+#portfolio {
+    height: 100vh;
+    width: 100%;
+    background-color: #91A378;
+    display: flex;
+    color: #586349;
+    align-content: center;
+    flex-direction: column;
+    
+}
+.portcontainer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.portcontainer .card{
+    position: relative;
+    background-color: #91A378;
+    border-color: #91A378;
+}
+
+.portcontainer .card .face {
+    width: 200px;
+    height: 200px;
+    transition: .4s;
+}
+
+.portcontainer .card .face.face1 {
+    position: relative;
+    background-color: #91A378; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+
+.portcontainer .card:hover .face.face1 {
+    transform: translateY(0);
+    box-shadow:
+        inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+
+.portcontainer .card .face.face1 .content{
+    opacity: .2;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.portcontainer .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.portcontainer .card .face.face1 .content i{
+    font-size: 3em;
+    color:#91A378;
+    display: inline-block;
+}
+
+.portcontainer .card .face.face1 .content a{
+    transition: .5s;
+}
+
+.portcontainer .card .face.face2{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+ }
+ 
+ .portcontainer .card:hover .face.face2{
+     transform: translateY(0);
+ 
+ 
+ }
+ 
+ .portcontainer .card .face.face2 .content p, a{
+   font-size: 10pt;
+   margin: 0 ;
+   padding: 0;
+   color:#333;
+ }
+ 
+ .portcontainer .card .face.face2 .content a{
+   text-decoration:none;
+   color: black;
+   box-sizing: border-box;
+   outline : 1px dashed #333;
+   padding: 10px;
+   margin: 15px 0 0;
+   display: inline-block;
+ }
+ 
+ .portcontainer .card .face.face2 .content a:hover{
+   background: #333 ;
+   color: whitesmoke; 
+   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+ }
+
+.thumbnail {
+    border-color: #ffffff;
+    border-style: solid 4px;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    
+}
+#logocontainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+}
+.logos {
+    padding: 10px;
+}
+
+.logopics {
+    height: 100px;
+    width: 100px;
+    filter: grayscale(100%);
+    padding: 10px;
+}
+
+
+
+#connect {
+    height: 100vh;
+    width: 100%;
+    background-color: #9DB082;
+    padding-top: 2.5rem;
+}
+
+#connectContainer {
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: column;
+}
+#connectTitle {
+    width: 100%;
+    color: #586349;
+}
+#connectDivide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#connectLinks {
+    width:30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px;
+}
+
+.socmed {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.socmed img {
+    width: 100%;
+    height: 100%;
+}
+
+#connectForm {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #586349;
+}
+
+#message {
+    padding: 15px;
+    bottom: 0;
+    width: 40%;
+    text-align: right;
+}
+
+#message h3 {
+    color: #586349
+}
+
+#contactForm {
+    width: 50%;
+    padding: 20px;
+}
+
+
+#connectForm {
+    padding: 15px;
+}
+
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #9DB082;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+form label,
+form legend {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+form [type="text"],
+form [type="email"],
+.StripeElement {
+  width: 100%;
+}
+form [type="button"],
+form [type="submit"],
+form [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+form [type="button"]:focus,
+form [type="submit"]:focus,
+form [type="reset"]:focus {
+  outline: none;
+}
+
+form select {
+  text-transform: none;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#footerSeparator {
+    border-right: 1px solid  #D6F0B1;
+    padding-right: 15px;
+}
