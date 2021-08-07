@@ -56,7 +56,7 @@ a:link {
 }
 #intro {
     display:flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #586349;
     align-items: center;
@@ -82,7 +82,7 @@ a:link {
 }
 
 #biography {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #7B8A66;
     padding-top: 3rem;
@@ -104,7 +104,7 @@ a:link {
 }
 
 #portfolio {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #91A378;
     display: flex;
@@ -128,14 +128,14 @@ a:link {
 }
 
 .portcontainer .card .face {
-    width: 200px;
+    width: 300px;
     height: 200px;
     transition: .4s;
 }
 
 .portcontainer .card .face.face1 {
     position: relative;
-    background-color: #91A378; 
+    background-color: #ffffff; 
     display: flex;
     justify-content: center;
     align-content: center;
@@ -149,17 +149,17 @@ a:link {
     transform: translateY(0);
     box-shadow:
         inset 0 0 60px whitesmoke,
-        inset 20px 0 80px #f0f,
+        inset 20px 0 80px rgba(255, 251, 0, 0.849),
         inset -20px 0 80px #0ff,
-        inset 20px 0 300px #f0f,
+        inset 20px 0 300px rgba(255, 251, 0, 0.849),
         inset -20px 0 300px #0ff,
         0 0 50px #fff,
-        -10px 0 80px #f0f,
+        -10px 0 80px rgba(255, 251, 0, 0.849),
         10px 0 80px #0ff;
 }
 
 .portcontainer .card .face.face1 .content{
-    opacity: .2;
+    opacity: 1;
     transition: 0.5s;
     text-align: center;
 }
@@ -222,8 +222,7 @@ a:link {
 .thumbnail {
     border-color: #ffffff;
     border-style: solid 4px;
-    border-radius: 8px;
-    width: 200px;
+    width: 300px;
     height: 200px;
     
 }
@@ -247,7 +246,7 @@ a:link {
 
 
 #connect {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #9DB082;
     padding-top: 2.5rem;
